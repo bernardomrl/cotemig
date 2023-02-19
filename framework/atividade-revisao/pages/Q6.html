@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exercicio Framework</title> <!-- QUESTAO 6 -->
+</head>
+<body onload=selectAppearence()>
+    <main class="main" id="main">
+        <div class="main-content">
+            <h1 class="main-title">Questão 6</h1>
+            <label class="main-label">Selecionar questão: </label>
+            <select name="select-questao" id="select-questao" class="main-select" onchange=questao6()> <!-- ONCHANGE PRA MUDAR QUANDO O ITEM SELECIONADO MUDAR -->
+                <option value="Q1" class="main-option">Questão 1</option>
+                <option value="Q2" class="main-option">Questão 2</option>
+                <option value="Q3" class="main-option">Questão 3</option>
+                <option value="Q4" class="main-option">Questão 4</option>
+                <option value="Q5" class="main-option">Questão 5</option>
+            </select>
+        </div>
+        <div class="main-question">
+            <h1 class="question-text">Faça um script que contenha um menu de seleção deste exercício e execute os mesmos
+                mediante seleção: Ex. selecionei 1, deve executar a primeira atividade e assim por diante.</h1>
+        </div>
+
+        <!-- SCRIPT -->
+
+        <script src="assets/js/main.js"></script>
+    </main>
+</body>
+</html>
