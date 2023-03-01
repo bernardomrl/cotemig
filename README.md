@@ -2,7 +2,7 @@
 
 > Este repositório é uma maneira de compartilhar meu trabalho com colegas e professores, bem como uma oportunidade de revisar meu próprio progresso e desenvolvimento.
 
-#### Como contribuir
+### Como contribuir
 > Sinta-se livre para enviar sugestões, correções ou adições ao código fonte dos projetos. Para contribuir:
 
     - Faça o fork deste repositório.
