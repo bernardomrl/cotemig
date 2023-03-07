@@ -8,7 +8,7 @@ for (i = 0; i < 5; i++) { // for para repetir o contador ate 5 pq ai vai fazer a
 }
 
 array = array1.concat(array2) // isso e pra concatenar as duas arrays com os valores inseridos pelo usuario em outra variavel (juntar os dois valores em um so, ex: array1 = [1,3,5,7,9] array2 = [2,4,6,8,10], array concatenada = [1,3,5,7,9,2,4,6,8,10]) lembrando q nao vai em ordem crescrente, eles so vao juntar uma com a outra
-array.sort((a, b) => a - b) // o array.sort é justamente para ordernar as variveis, basicamente 'sortir' elas (esse (a,b) => a - b) é pra deixar elas em ordem crescrente.
+array.sort((a, b) => a - b) // o array.sort é justamente para ordernar as variveis, basicamente 'sortir' elas (esse (a,b) => a - b) é pra deixar elas em ordem crescente, pra deixar em decrescente é so inverter o a pelo b (eu acho KKKKKKKKKKK)
 array.pop() // o pop() serve pra remover o primero valor da array, ex array = [1,2,3,4], array.pop() vai fazer com que a array seja array = [2,3,4]
 array.shift() // o shift é basicamente a mesma coisa de cima mas retira o ultimo numero, entao seria array = [1,2,3,4], array.shift() vai fazer com que a array seja array = [1,2,3]
 console.log(array) // isso aq n sei se vc sabe mas é para mostrar algo dentro do console do navegador(F12), pode ser uma variavel ou um texto dentro das ""
