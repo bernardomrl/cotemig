@@ -26,12 +26,16 @@ funcionarios = [
         salario: 2500
     }
 ]
-console.log(funcionarios)
-funcionarios = funcionarios.filter(funcionario => funcionario.departamento === 'Financeiro').map(funcionario => ({
+financeiro = funcionarios.filter(funcionario => funcionario.departamento === 'Financeiro').map(funcionario => ({
     nome: funcionario.nome,
-    departamento: funcionario.departamento,
-    salario: (funcionario.salario * 0.5) + funcionario.salario
+    salario: funcionario.salario
 }))
-soma = funcionarios.reduce((s, funcionario) => s + funcionario.salario, 0)
-console.log(funcionarios)
-console.log('Soma dos salarios do departamento financeiro : ' + soma)
+
+let total = 0
+
+for (let i = 0; i < financeiro.length; i++) {
+    financeiro[i].salario *= 1.5
+    total += financeiro[i].salario
+}
+
+console.log(`O total dos salários do departamento Financeiro, depois do aumento : ${total}`)

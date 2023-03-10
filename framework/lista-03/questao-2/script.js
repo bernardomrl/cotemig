@@ -2,7 +2,7 @@
 array1 = []
 array2 = []
 
-for (i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
     array1.push(parseInt(prompt("QUESTAO 1\rDigite o numero do primeiro vetor: ")))
     array2.push(parseInt(prompt("QUESTAO 1\rDigite o numero do segundo vetor: ")))
     i++
@@ -16,16 +16,8 @@ console.log(array)
 
 // QUESTAO 2
 
-search = parseInt(prompt("QUESTAO 2\rDigite o número que deseja verificar no vetor: "))
-console.log(search)
-function searchArray(search) {
-    let a = array.indexOf(search, 0)
+index = parseInt(prompt("QUESTAO 2\rDigite o número que deseja procurar no array."))
 
-    if (a >= 0) {
-        return `${a} existe no vetor concatenado.`
-    } else {
-        return `${a} não existe no vetor concatenado.`
-    }
-}
+let i = array.indexOf(index, 0)
 
-console.log(searchArray(array))
+i >= 0 ? console.log(`${index} existe no array, posição : ${i}`) : console.log(`${index} não existe no array.`)

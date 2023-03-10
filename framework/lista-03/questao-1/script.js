@@ -2,7 +2,7 @@
 array1 = []
 array2 = []
 
-for (i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
     array1.push(parseInt(prompt("Digite o numero do primeiro vetor: ")))
     array2.push(parseInt(prompt("Digite o numero do segundo vetor: ")))
 }

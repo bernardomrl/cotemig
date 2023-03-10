@@ -11,9 +11,10 @@ const produtos = [
     { nome: 'Biscoito', preco: 10.00 },
     { nome: 'Queijo', preco: 5.49 }
 ]
-desconto = produtos.map(p => ({
+
+const desconto = produtos.map(p => ({
     nome: p.nome,
-    preco: Math.round(((p.preco - (p.preco * 0.10)) + Number.EPSILON) * 100) / 100
+    precoAtual: Math.round(((p.preco - (p.preco * 0.10)) + Number.EPSILON) * 100) / 100
 }))
 
 console.log("Produtos sem desconto aplicado : ")
